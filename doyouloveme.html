@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ứng dụng doyouloveme</title>
+</head>
+<body style="position: relative">
+
+<h1>Do ou love me?</h1>
+
+<input type="button" id="yes" onclick="dongy()" value="YES">
+<input type="button" id="no" value="NO" onmouseover="khong()" style="position: absolute"; left="200px" top="200px" >
+
+
+<script>
+    function dongy() {
+        document.getElementById('yes')
+        alert('<3')
+    }
+    function khong() {
+        let left = parseInt(Math.random()*500);
+        let top = parseInt(Math.random()*500);
+        document.getElementById('no').style.left = left + 'px';
+        document.getElementById('no').style.top = top + 'px';
+    }
+</script>
+</body>
+</html>

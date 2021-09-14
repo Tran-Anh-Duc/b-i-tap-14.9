@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyện tập sử dụng câu lẹnh switch -case </title>
+</head>
+<body>
+
+
+<input type="text" id="daymot" value="" style="width: 150px">
+<button id="ketqua1" onclick="clickMe()">tính số ngày</button>
+<br><br>
+<input type="text" id="dayhai" value="" style="width: 150px">
+<button id="ketqua2" onclick="ClickYou()" >tính số ngày</button>
+
+
+<script>
+function clickMe() {
+    let monthmot = +document.getElementById('daymot').value;
+    switch (monthmot){
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            alert('tháng một có 31 ngày')
+            break;
+        case 2:
+            alert('tháng một có 28 ngày')
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            alert('tháng một có 30 ngày')
+            break;
+    }
+
+}
+function ClickYou() {
+    let monthhai = +document.getElementById('dayhai').value;
+    switch (monthhai){
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            alert('tháng một có 31 ngày')
+            break;
+        case 2:
+            alert('tháng một có 28 ngày')
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            alert('tháng một có 30 ngày')
+            break;
+    }
+
+}
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
