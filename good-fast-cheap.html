@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thực hành bài tập good- fast - cheap</title>
+</head>
+<body>
+
+<input type="checkbox" id="nutmot" onchange="checkGood()">nút một<br>
+<input type="checkbox" id="nuthai" onchange="checkfast()">nút hai<br>
+<input type="checkbox" id="nutba" onchange="checkCheap()">nút ba <br>
+
+
+<script>
+function checkGood() {
+    let nutba = document.getElementById('nutba').checked;
+    let nuthai = document.getElementById('nuthai').checked;
+    if (nutba && nuthai){
+        document.getElementById('nutba').checked = false
+    }
+}
+function checkfast() {
+    let nutba = document.getElementById('nutba').checked
+    let nutmot = document.getElementById('nutmot').checked
+    if (nutmot && nuthai){
+        document.getElementById('nutmot').checked = false
+    }
+}
+function checkCheap() {
+    let nutmot = document.getElementById('nutmot').checked
+    let nuthai = document.getElementById('nuthai').checked
+    if (nutmot &&  nuthai) {
+        document.getElementById('nuthai').checked = false
+    }
+}
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
